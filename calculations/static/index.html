@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/layout1.css" />
     <title>Mathematical Calculations</title>
     <script>
         function volcone() {
@@ -56,33 +56,35 @@
 </head>
 
 <body>
-    <div class="container1">
-        <h1>MATHEMATICAL CALCULATIONS</h1>
-    </div><br>
-    <div class="container1">
-        <div class="ee">
-            <h2 class="hhh">Volume Of Cone</h2>
-            <label for="radcone">Radius Of Cone:</label>
-            <input type="text" name="radcone" id="radcone"><label> in meter</label><br><br>
-            <label for="heightcone">Height Of Cone:</label>
-            <input type="text" name="heightcone" id="heightcone"><label> in meter</label><br><br>
-            <button type="button" onclick="volcone()">Calculate</button><br><br>
-            <label class="u">Volume of Cone = (πr^2h)/3</label><br><br>
-            <label class="u" id="vol_cone"></label>
-        </div>
+    <div class="t">
+        <div class="header">
+            <h1>MATHEMATICAL CALCULATIONS</h1>
+        </div><br>
+        <div class="container">
+            <div class="ee">
+                <h2 class="hhh">Volume Of Cone</h2>
+                <label for="radcone">Radius Of Cone:</label>
+                <input type="text" name="radcone" id="radcone"><label> in meter</label><br><br>
+                <label for="heightcone">Height Of Cone:</label>
+                <input type="text" name="heightcone" id="heightcone"><label> in meter</label><br><br>
+                <button type="button" onclick="volcone()">Calculate</button><br><br>
+                <label class="u">Volume of Cone = (πr^2h)/3</label><br><br>
+                <label class="u" id="vol_cone"></label>
+            </div>
 
-        <div class="ee">
-            <h2 class="hhh">Volume Of Cylinder</h2>
-            <label for="radcylinder">Radius Of Cylinder:</label>
-            <input type="text" name="radcylinder" id="radcylinder"> <label>  in meter</label><br><br>
-            <label for="heightcylinder">Height Of Cylinder:</label>
-            <input type="text" name="heightcylinder" id="heightcylinder"><label>  in meter</label><br><br>
-            <button class="f" type="button" onclick="volcylinder()">Calculate</button><br><br>
-            <label class="u">Volume of Cylinder = πr^2h</label><br><br>
-            <label class="u" id="vol_cylinder"></label>
-        </div>
+            <div class="ee">
+                <h2 class="hhh">Volume Of Cylinder</h2>
+                <label for="radcylinder">Radius Of Cylinder:</label>
+                <input type="text" name="radcylinder" id="radcylinder"> <label>  in meter</label><br><br>
+                <label for="heightcylinder">Height Of Cylinder:</label>
+                <input type="text" name="heightcylinder" id="heightcylinder"><label>  in meter</label><br><br>
+                <button class="f" type="button" onclick="volcylinder()">Calculate</button><br><br>
+                <label class="u">Volume of Cylinder = πr^2h</label><br><br>
+                <label class="u" id="vol_cylinder"></label>
+            </div>
+        </div><br>
+        <div class="footer">Developed by Venkatesh E</div>
     </div>
-
 </body>
 
 </html>
