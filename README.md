@@ -273,3 +273,6 @@ Thus a website is designed to perform mathematical calculations in the client si
 ~~~
 ## Output:
 ![output](calculations/static/img/2.jpg)
+## Result:
+
+Thus a website is designed with Canvas
