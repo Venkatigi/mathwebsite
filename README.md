@@ -213,3 +213,63 @@ input {
 ## Result:
 
 Thus a website is designed to perform mathematical calculations in the client side.
+# HTML Canvas Experiment:
+## Program:
+~~~
+<!DOCTYPE html>
+<html>
+<title>Canvas</title>
+
+<body>
+    <h1 style="text-align: center;">Assignment</h1>
+    <canvas id="mycanvas" width="600px" height="400px" style="border:2px solid #000000">
+        </canvas>
+    <script>
+        var canvas = document.getElementById("mycanvas");
+        var ctx = mycanvas.getContext("2d");
+        ctx.moveTo(5, 5);
+        ctx.lineWidth = 6;
+        ctx.lineTo(590, 390);
+        ctx.stroke();
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(5, 5, 590, 390);
+        ctx.stroke();
+        ctx.fillStyle = "#000000";
+        ctx.font = "900 30px Arial";
+        ctx.fillText("DANGER", 20, 370);
+    </script>
+
+    <canvas id="canvas" width="400px" height="400px" style="border:2px solid #000000">
+        </canvas>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(200, 200, 150, 100, -1.5 * Math.PI, true);
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 4;
+        ctx.fillStyle = "lightgreen";
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(160, 160, 20, 25, -1.5 * Math.PI, true);
+        ctx.fillStyle = "lightblue";
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(235, 160, 20, 10, -1.5 * Math.PI, true);
+        ctx.fillStyle = "lightblue";
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(200, 195, 122, 1 * Math.PI, 2 * Math.PI, true);
+        ctx.strokeStyle = "violet";
+        ctx.lineWidth = 4;
+        ctx.stroke()
+    </script>
+</body>
+
+</html>
+~~~
+## Output:
+![output](calculations/static/img/2.jpg)
